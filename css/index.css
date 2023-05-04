@@ -46,7 +46,7 @@ button {
 .navbar__list .navbar__item {
   font-size: 16px;
   letter-spacing: 2px;
-  padding: 2em;
+  padding: 1em;
   text-transform: uppercase;
 }
 .index {
@@ -99,6 +99,7 @@ button {
   font-size: 32px;
   text-transform: uppercase;
   font-family: "Bellefair", serif;
+  outline: none;
   transition: 500ms;
 }
 .index__button:hover {

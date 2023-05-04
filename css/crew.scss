@@ -1,0 +1,91 @@
+main {}
+.crew {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3em;
+    position: relative;
+}
+.crew__box {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.crew__headline {
+    position: absolute;
+    top: 0;
+    left: 380px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Bellefair', serif;
+    .headline__span {
+        color: rgb(208, 214, 249);
+    }
+}
+.crew__wrapper {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-left: 580px;
+    .crew__buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        .crew__button {
+            width: 15px;
+            height: 15px;
+            background-color: hsla(0, 0%, 100%, 0.1);
+            font-size: 26px;
+            border-radius: 50%;
+            &:focus {
+                background-color: #fff;
+                color: #000;
+            }
+        }
+    }
+}
+.crew__info {
+    width: 510px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .crew__title {
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 36px;
+        color: rgb(208, 214, 249);
+    }
+}
+.crew__word {
+    font-size: 56px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Bellefair', serif;
+}
+.crew__description {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(208, 214, 249);
+    letter-spacing: 0.5px;
+    text-align: start;
+    padding-right: 2em;
+}
+
+.crew__img {
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 55%;
+    .crew__image {
+        width: 700px;
+        height: 800px;
+        object-fit: contain;
+    }
+}
