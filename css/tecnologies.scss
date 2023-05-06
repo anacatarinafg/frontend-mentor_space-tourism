@@ -92,3 +92,103 @@ main {}
         object-fit: contain;
     }
 }
+
+/* RESPONSIVE TO MOBILE */
+@media (max-width: 768px){
+    .tec {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .tec__box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .tec__headline {
+        position: absolute;
+        left: 50px;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-family: 'Bellefair', serif;
+        .headline__span {
+            color: rgb(208, 214, 249);
+
+        }
+    }
+    .tec__wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-left: 0px;
+        margin-top: 50px;
+        padding: 2.5em;
+        .tec__buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 50px;
+            .tec__button {
+                width: 50px;
+                height: 50px;
+                background-color: transparent;
+                color: #fff;
+                font-size: 22px;
+                font-family: 'Bellefair', serif;
+                border: 1px solid #fff;
+                border-radius: 50%;
+                &:focus {
+                    background-color: #fff;
+                    color: #000;
+                }
+            }
+        }
+    }
+    .tec__info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        .tec__title {
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 14px;
+            color: rgb(208, 214, 249);
+        }
+    }
+    .tec__word {
+        font-size: 32px;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-family: 'Bellefair', serif;
+    }
+    .tec__description {
+        font-size: 16px;
+        font-weight: 400;
+        color: rgb(208, 214, 249);
+        letter-spacing: 0.5px;
+        text-align: justify;
+        padding-right: 0em;
+    }
+    
+    .tec__img {
+        position: inherit;
+        display: flex;
+        justify-content: flex-end;
+        .tec__image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+}
